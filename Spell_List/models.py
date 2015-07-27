@@ -1,5 +1,13 @@
 from django.db import models
 
+class Component(models.Model):
+    #TODO: Fill out Component model
+    pass
+
+class CharacterClass(models.Model):
+    #TODO: Fill out CharacterClass model
+    pass
+
 class Spell(models.Model):
     name = models.CharField(max_length=255)
     is_ritual = models.BooleanField(default=False)
@@ -13,8 +21,3 @@ class Spell(models.Model):
     components = models.ManyToManyField(Component)
     canBeCastBy = models.ManyToManyField(CharacterClass)
 
-class Component(models.Model):
-    pass
-
-class CharacterClass(models.Model):
-    pass
