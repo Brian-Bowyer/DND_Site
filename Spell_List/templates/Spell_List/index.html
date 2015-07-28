@@ -1,0 +1,14 @@
+{% extends "Spell_List/base.html" %}
+
+{% block title %}
+	Index Under Construction
+{% endblock title %}
+
+{% block content %}
+	<h1>Spells</h1>
+	<ul>
+		{% for spell in spells %}
+			<li>{{ spell.name }}</li>
+		{% endfor %}
+	</ul>
+{% endblock content %}

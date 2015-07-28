@@ -1,0 +1,25 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}DEFAULT TITLE{% endblock title %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static "Spell_List/style.css" %}">
+</head>
+<body>
+	<div id="container">
+		<div id="row">
+			<div id="sidebar">
+				{% include "Spell_List/sidebar.html" %}
+			</div>
+			<div id="content">
+				{% block content %}
+					DEFAULT CONTENT
+				{% endblock content %}
+			</div>
+		</div>
+	</div>
+</body>
+</html>
