@@ -1,5 +1,11 @@
 from django.db import models
 
+class Component(models.Model):
+    name = models.CharField(max_length=255)
+
+class CharacterClass(models.Model):
+    name = models.CharField(max_length=255)
+
 class Spell(models.Model):
     name = models.CharField(max_length=255)
 
@@ -17,8 +23,3 @@ class Spell(models.Model):
     components = models.ManyToManyField(Component)
     canBeCastBy = models.ManyToManyField(CharacterClass)
 
-class Component(models.Model):
-    name = models.CharField(max_length=255)
-
-class CharacterClass(models.Model):
-    name = models.CharField(max_length=255)
