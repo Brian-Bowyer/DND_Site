@@ -1,3 +1,11 @@
 .idea/
 DND_Site/__pycache__/__init__.cpython-34.pyc
 DND_Site/__pycache__/settings.cpython-34.pyc
+DND_Site/__pycache__/urls.cpython-34.pyc
+DND_Site/__pycache__/wsgi.cpython-34.pyc
+Spell_List/__pycache__/__init__.cpython-34.pyc
+Spell_List/__pycache__/admin.cpython-34.pyc
+Spell_List/__pycache__/models.cpython-34.pyc
+Spell_List/__pycache__/urls.cpython-34.pyc
+Spell_List/__pycache__/views.cpython-34.pyc
+Spell_List/migrations/__pycache__/
