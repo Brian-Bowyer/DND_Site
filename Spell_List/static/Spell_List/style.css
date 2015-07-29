@@ -16,11 +16,11 @@
 
 #sidebar{
 	width: 160px;
-	background: gray;
+	background: #AADDDD;
 }
 
 #content{
-	background: white;
+	background: #BBBBBB;
 	border-right: solid 20px white;
 }
 
@@ -36,10 +36,12 @@ h1 {
   margin: 0 0 20px 0;
   padding: 0;
   line-height: 1;
+  text-align: center;
 }
 p {
   margin: 0 0 20px 0;
 }
 ul {
   padding: 0 0 0 20px;
+  list-style-type: none;
 }

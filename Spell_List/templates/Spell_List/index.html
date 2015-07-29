@@ -1,14 +1,34 @@
 {% extends "Spell_List/base.html" %}
 
 {% block title %}
-	Index Under Construction
+	DND 5e Spell List
 {% endblock title %}
 
 {% block content %}
 	<h1>Spells</h1>
-	<ul>
+	<table class = "sortable">
+			<tr>
+				<th>Name</th>
+				<th>Level</th>
+				<th>School</th>
+				<th>Casting Time</th>
+				<th>Duration</th>
+				<th>Range</th>
+				<th>Ritual?</th>
+				<th>Concentration?</th>
+			</tr> 
 		{% for spell in spells %}
-			<li>{{ spell.name }}</li>
+
+			<tr>
+				<td>{{ spell.name }}</td>
+				<td>{{ spell.level }}</td>
+				<td>{{ spell.school }}</td>
+				<td> {{ spell.casting_time }} </td>
+				<td> {{ spell.duration }} </td>
+				<td> {{ spell.range }} </td>
+				<td> {% if spell.is_ritual %} Yes {% else %} No {% endif %}</td>
+				<td> {% if spell.is_concentration %} Yes {% else %} No {% endif %}</td>
+			</tr>
 		{% endfor %}
-	</ul>
+	</table>
 {% endblock content %}
