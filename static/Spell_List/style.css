@@ -1,0 +1,47 @@
+#container{
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+#row{
+	display: table-row;
+}
+
+#sidebar,
+#content{
+	display: table-cell;
+	padding: 20px;
+}
+
+#sidebar{
+	width: 160px;
+	background: #AADDDD;
+}
+
+#content{
+	background: #BBBBBB;
+	border-right: solid 20px white;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  //padding: 20px;
+  box-sizing: border-box;
+}
+h1 {
+  margin: 0 0 20px 0;
+  padding: 0;
+  line-height: 1;
+  text-align: center;
+}
+p {
+  margin: 0 0 20px 0;
+}
+ul {
+  padding: 0 0 0 20px;
+  list-style-type: none;
+}

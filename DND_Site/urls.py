@@ -19,5 +19,5 @@ from Spell_List import urls as spell_URLS
 #TODO: Make URLS
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^spell/', include(spell_URLS)),
+    url(r'^spells/', include(spell_URLS)),
 ]
