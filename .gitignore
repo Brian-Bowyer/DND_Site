@@ -9,3 +9,5 @@ Spell_List/__pycache__/models.cpython-34.pyc
 Spell_List/__pycache__/urls.cpython-34.pyc
 Spell_List/__pycache__/views.cpython-34.pyc
 Spell_List/migrations/__pycache__/
+Spell_List/__pycache__/tests.cpython-34.pyc
+Spell_List/migrations/0002_auto_20150805_0145.py
